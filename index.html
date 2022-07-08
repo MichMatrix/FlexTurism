@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Turism</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+     <!-- menu  -->
+    <header>
+        <div class="flex-container menu espace_mobile">
+            <div><h1>FlexTurism</h1></div>
+            <ul class="list-items">
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Plans</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <!-- apresentation container  -->
+    <div class="flex-container apresentacao">
+        <div class="texto-apresentacao espace_mobile">
+            <h1>Flex <br>Turism</h1>
+            <p>Best Service for you!</p>
+            <a href="#services" class="btn">Know more!</a>
+        </div>
+
+        <div>
+            <div><img src="./images/0-main.png" alt="presentation banner"></div>
+        </div>
+    </div>
+
+     <!-- about us container  -->
+    <div class="flex-container" id="about-us">
+        <div>
+            <h2>About us</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+        <div>
+            <img src="./images/1-quem-somos.png" alt="service">
+        </div>
+    </div>
+    
+     <!-- servies section inside the container  -->
+    <div class="container-externo">
+        <div class="flex-container" id="services">
+            <div class="espace_mobile">
+                <h2>Services</h2>
+            </div>
+
+            <div class="list-services">
+                <div class="item-service">
+                    <div><img src="./images/icon-2.png" alt="accommodation"></div>
+                    <p>Accommodation</p>
+                    <a href="#">Buy now</a>
+                </div>
+
+                <div class="item-service">
+                    <div><img src="./images/icon-1.png" alt="travel package"></div>
+                    <p>Travel package</p>
+                    <a href="#">Buy now</a>
+                </div>
+
+                <div class="item-service">
+                    <div><img src="./images/icon-3.png" alt="custom itineraries"></div>
+                    <p>Custom itineraries</p>
+                    <a href="#">Buy now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+     <!-- plans section using flex container too  -->
+    <div class="flex-container" id="plans">
+
+        <div class="espace_mobile"><h2>Plans</h2></div>
+        <div class="plan-list">
+            <div class="item-plan">
+                <h3>Plan 1</h3>
+                
+                <ul>
+                    <li>Support 24h</li>
+                    <li>Room Service</li>
+                    <li>Tourist Guide</li>
+                </ul>
+                <a href="#" class="btn">Know more!</a>
+            </div>
+    
+            <div class="item-plan">
+                <h3>Plan 2</h3>
+                <br>
+                <ul>
+                    <li>Support 24h</li>
+                    <li>Room Service</li>
+                    <li>Tourist Guide</li>
+                    <li>Trails Itinerary</li>
+                    
+                </ul>
+                <a href="#" class="btn">Know more!</a>
+            </div>
+    
+            <div class="item-plan">
+                <h3>Plan 3</h3>
+                <br>
+                <ul>
+                    <li>Support 24h</li>
+                    <li>Room Service</li>
+                    <li>Tourist Guide</li>
+                    <li>Trails Itinerary</li>
+                    <li>Personalized Service</li>
+                    <li>VIP Area </li>
+                </ul>
+                <a href="#" class="btn">Know more!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="flex-container footer espace_mobile">
+            <p> Michel Adelino &copy; 2022 CSS Flexbox</p>
+           
+        </div>
+    </footer>
+   
+</body>
+</html>
