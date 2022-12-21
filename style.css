@@ -38,6 +38,11 @@ header .list-items {
     color: #fff;
 
 }
+
+.list-items li a:hover{
+    color: #376ac8;
+}
+
 div img {
     display: block;
     width: 100%;
@@ -103,7 +108,28 @@ ul li a {
 }
 
 
+/* right button scroll to top */
 
+#btn-scroll-top {       
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border-color: rgb(244, 232, 169);
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 14px;
+    border-radius: 10px;
+    background-color: rgb(246,130,69); /* Set a background color */
+
+}
+
+#btn-scroll-top:hover {
+    background-color: #555;
+  }
 
 #about-us{
     flex-direction: row-reverse;
