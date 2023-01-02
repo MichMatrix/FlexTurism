@@ -422,7 +422,7 @@ footer .footer {
 @media(max-width:440px) {
 
     .plan-list .item-plan {
-        width: 47%;
+        width: 41%;
         margin: 20px 60px;
         display:flex;
         flex-direction: column;
@@ -452,8 +452,8 @@ footer .footer {
 @media(max-width:385px) {
 
     .plan-list .item-plan {
-        width: 45%;
-        margin: 20px 42px;
+        width: 40%;
+        margin: 20px 15px;
       
     }
 }
