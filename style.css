@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:'Gill Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -114,7 +115,7 @@ ul li a {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 15px;
     z-index: 99;
     font-size: 25px;
     border-color: rgb(244, 232, 169);
@@ -160,7 +161,8 @@ ul li a {
 }
 
 #about-us img {
-    min-width: 420px;
+    min-width: 400px;
+    margin-right: 500px;
 }
 
 .container-externo {
@@ -223,7 +225,6 @@ ul li a {
 #plans {
     flex-direction: column;
     min-width: 100vh;
-
 }
 
 #plans h2 {
@@ -244,7 +245,6 @@ ul li a {
     margin-right: 20px;
     max-width: 240px;
     padding: 0 15px 0;
-   
 }
 
 .item-plan .btn {
@@ -259,7 +259,6 @@ ul li a {
     flex-direction: column;
     text-align: center;
     padding: 20px 10px 5px;
-    
 }
 
 .item-plan h3::after{
@@ -301,7 +300,6 @@ footer {
     align-items: center;
     margin-top: 130px;
     padding-top: 20px;
-
 }
 
 footer .footer {
@@ -310,12 +308,10 @@ footer .footer {
     font-family:Impact, 'Arial Narrow Bold', sans-serif;
     font-style:initial;
     font-size:14px;
-    
-
 }
 
 
-/*mobile*/
+/*smaller screen like laptop*/
 
 @media(max-width:1020px) {
     .flex-container {
@@ -329,17 +325,20 @@ footer .footer {
     .apresentacao  {
         flex-direction: column-reverse;
         margin-top: 140px;
+        height: 100%;
     }
     .apresentacao .texto-apresentacao {
         width: 100%;
         padding-left: 40px;
     }
-    #quem-somos {
-        flex-direction: column-reverse;
+    #about-us {
+        flex-direction: column;
+        margin: 70px 20px 70px;
     }
 
-    #quem-somos img{
-        min-width: 310px;
+    #about-us img{
+        min-width: 70px;
+        max-width: 420px;
         margin: auto;
     }
 
@@ -348,12 +347,17 @@ footer .footer {
     }
 
     #about-us {
-        margin: 70px 0 70px;
+        margin: 70px 10px 70px;
     }
 
     #about-us img {
        min-width: 210px;
        margin-right: 20px;
+    }
+
+    #about-us .text-box {
+        padding-top: 40px;
+        padding-left: 12px;
     }
 
     #plans h2{
@@ -378,14 +382,78 @@ footer .footer {
 
     .plan-list .item-plan {
         max-width: 80%;
-        margin: auto;
         width: 50%;
-        margin-bottom: 20px;
+        margin: 25px 200px;
+        
     }
     footer {
         width: 100%;
     }
     footer .footer {
         align-items: center;
+    }
+}
+
+
+/*tablet*/
+
+@media(max-width:770px) {
+    .plan-list .item-plan {
+        width: 50%;
+        margin: 20px 170px;
+    }
+    
+}
+
+
+/*smaller tablet*/
+
+@media(max-width:680px) {
+    .plan-list .item-plan {
+        width: 50%;
+        margin: 20px 140px;
+    }
+    
+}
+
+
+/*phone*/
+
+@media(max-width:440px) {
+
+    .plan-list .item-plan {
+        width: 47%;
+        margin: 20px 60px;
+        display:flex;
+        flex-direction: column;
+    }
+    .plan-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .item-plan .btn {
+        padding: 10px;
+        width: 190px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    footer .footer {
+        align-items: start;
+    }
+}
+
+
+/*smaller phone*/
+
+@media(max-width:385px) {
+
+    .plan-list .item-plan {
+        width: 45%;
+        margin: 20px 42px;
+      
     }
 }
